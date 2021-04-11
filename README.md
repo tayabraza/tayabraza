@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @tayabraza, I am working as a Front Developer.
+- 👋 Hi, I’m Tayab Raza, I am working as a Front Developer.
 - 👀 I’m interested in building JavaScript libraries and tools.
-- 🌱 I’m currently learning about making JavaScript libraries.
+- 🌱 I’m currently learning about building JavaScript libraries.
 - 💞️ I’m looking to collaborate in open source projects. 
 - 📫 You can reach me on tayabraza@gmail.com
 
