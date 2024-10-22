@@ -1,0 +1,119 @@
+[
+    {
+      "professional": [
+        {
+          "id": 1,
+          "name": "ValPal Website",
+          "image": "../src/img/valpal-website.png",
+          "url": "https://valpal.co.uk",
+          "description" : "The ValPal Network is owned by Angels Media, one of the property industry's best known digital marketing agency."
+        },
+        {
+          "id": 2,
+          "name": "ValPal Tool",
+          "image": "../src/img/valpal-tool.png",
+          "url": "https://testingagent.valpal.co.uk",
+          "description" : "The ValPal tool allows you to capture the details of vendors and landlords visiting your website."
+        },
+        {
+          "id": 3,
+          "name": "Majors Chauffeurs",
+          "image": "../src/img/majorschauffeurs.png",
+          "url": "https://majorschauffeurs.co.uk",
+          "description" : "Majors Chauffeurs founded on the principles of luxury, discretion, and personalized services."
+        },
+        {
+          "id": 4,
+          "name": "Happiroo",
+          "image": "../src/img/happiroo.png",
+          "url": "https://happiroo.co.uk",
+          "description" : "Happiroo is an Asian grocery store. It started with COVID-19 when people were scared to go out for grocery."
+        },
+        {
+          "id": 5,
+          "name": "Code Hang",
+          "image": "../src/img/codehang.png",
+          "url": "https://codehang.com/",
+          "description" : "Code Hang is designed to help web developers and designers with small but efficient code snippets when their code gets stuck."
+        }
+      ]
+    },
+    {
+      "freelance": [
+        {
+          "id": 1,
+          "name": "Sleek Property",
+          "image": "../src/img/sleekproperty.png",
+          "url": "https://tayabraza.com/sleekproperty",
+          "description" : "Sleek Property offer an exemplary service to landlords. Our team is always ready when it comes to manage your properties."
+        },
+        {
+          "id": 2,
+          "name": "MIM Accountants",
+          "image": "../src/img/mimaccountants.png",
+          "url": "https://wecodebuilder.com/mimaccountants/",
+          "description" : "Mim Accountants is a modern accountancy practice established in South London to help small & medium businesses."
+        },
+        {
+          "id": 3,
+          "name": "Blogs Website",
+          "image": "../src/img/blogs.png",
+          "url": "https://articlesui.netlify.app/",
+          "description" : "The website's clean, user-friendly design makes it easy to explore and discover new articles with responsive layout."
+        },
+        {
+          "id": 4,
+          "name": "Teams Management System",
+          "image": "../src/img/teams.png",
+          "url": "https://tayabraza.com/teams/",
+          "description" : "Team Management System is designed to improve communication of teams within an organization."
+        },
+        {
+          "id": 5,
+          "name": "Reports",
+          "image": "../src/img/reports.png",
+          "url": "https://tayabraza.com/reports/",
+          "description" : "Reports interface shows key metrics and performance insights into visually appealing charts and graphs."
+        }
+      ]
+    },
+    {
+      "personal": [
+        {
+          "id": 1,
+          "name": "GAP CSS",
+          "image": "../src/img/gapcss.png",
+          "url": "https://gapcss.com",
+          "description" : "Gap CSS framework is a lightweight framework designed to provide simple set of classes for building responsive web pages."
+        },
+        {
+          "id": 2,
+          "name": "$CWIF Soldier",
+          "image": "../src/img/cwifsoldier.png",
+          "url": "https://cwifsoldier.com",
+          "description" : "$CWIF Soldier is a member of the $CWIF Catwifhat community. He is a strong advocate for the $CWIF meme coin."
+        },
+        {
+          "id": 3,
+          "name": "Incident Reporting System",
+          "image": "../src/img/irs.png",
+          "url": "https://tayabraza.com/irs/",
+          "description" : " Incident Reporting System is a digital tool designed to submit incident reports with the current location."
+        },
+        {
+          "id": 4,
+          "name": "Weather App",
+          "image": "../src/img/weather.png",
+          "url": "https://tayabraza.com/ukhsa",
+          "description" : "Weather app delivers location-based weather information, including temperature, local time with sunrise and sunet times."
+        },
+        {
+          "id": 5,
+          "name": "ADB UK Dashboard",
+          "image": "../src/img/adb.png",
+          "url": "https://tayabraza.com/adb/",
+          "description" : "ADB UK Dashboard provides administrators with a centralized hub to manage key aspects of a web application."
+        }
+      ]
+    }
+  ]
