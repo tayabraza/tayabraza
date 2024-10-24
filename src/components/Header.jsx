@@ -1,3 +1,5 @@
+import linkedin from '/src/img/linkedin.png';
+import github from '/src/img/github.png';
 
 function Header() {
     return (
@@ -11,10 +13,10 @@ function Header() {
                 </div>
                 <div className="flex social">
                     <a href="https://linkedin.com/in/tayabraza" target="_blank" rel="noopener noreferrer" className="me-4">
-                        <img src="../src/img/linkedin.png" alt="LinkedIn" />
+                        <img src={linkedin} alt="LinkedIn" />
                     </a>
                     <a href="https://github.com/tayabraza" target="_blank" rel="noopener noreferrer">
-                        <img src="../src/img/github.png" alt="Github" />
+                        <img src={github} alt="Github" />
                     </a>
                 </div>
 
