@@ -1,5 +1,14 @@
+import { useState, useEffect } from "react";
 
 function Projects({results, loading}) {
+
+    const [drag, setDrag] = useState();
+
+    useEffect( () => {
+
+        navigator.maxTouchPoints > 0 ? setDrag(true) : setDrag(false);
+        
+    }, [drag]);
 
     const showProjects = event => {
         document.querySelectorAll('button.text-white').forEach(btn => btn.classList.remove('gradient-tr'));
@@ -7,25 +16,21 @@ function Projects({results, loading}) {
         document.querySelectorAll('.slider-container').forEach(slider => slider.style.display = 'none');
         document.getElementById(`slider-container-${event.target.id}`).style.display = 'block';
     }
+
+    let dragValue = 72;
+  
     ['drag', 'touchmove'].forEach( dragEvent => {
         window.addEventListener(dragEvent, event => {
-            let drag = '';
-            event.touches ? drag = event.touches[0] : drag = event;
             if ( event.target.draggable ) {
                 event.target.closest('.slider').classList.remove('slider-animation');
-                event.target.closest('.slider').style.transform  = `rotateY(-${drag.clientX}deg)`;
-            }
+                event.target.closest('.slider').style.transform  = `rotateY(${dragValue++}deg)`;
+            } 
         })
     });
     ['dragend', 'touchend'].forEach( dragEvent => {
         window.addEventListener(dragEvent, event => {
-            let drag = '';
-            event.touches ? drag = event.changedTouches[0] : drag = event;
             if ( event.target.draggable ) {
-                event.target.closest('.slider').style.transform  = `perspective(1000px) rotateY(${drag.clientX}deg)`;
-                setTimeout( () => {
-                    event.target.closest('.slider').classList.add('slider-animation');
-                },12000)
+                event.target.closest('.slider').style.transform  = `perspective(1000px) rotateY(${dragValue++}deg)`;
             }
         })
     });
@@ -57,10 +62,10 @@ function Projects({results, loading}) {
                                             return (
 
                                                 <div key={project.id} className={`card card-${index + 1} shadow-md`}>
-                                                    <a href={project.url} className="card-link">
+                                                    <a href={project.url} className="card-link" target="_blank" rel="noopener noreferrer">
                                                         <img src={project.image} alt={project.name} className="rounded-t-xl grayscale hover:grayscale-0"  />
-                                                        <h2 className="text-lg mt-3 hover:text-sky-400">{project.name}</h2>
-                                                        <p className="text-sm text-left p-3">{project.description}</p>
+                                                        <h2 className="text-lg mt-3 hover:text-sky-400" draggable={drag}>{project.name}</h2>
+                                                        <p className="text-sm text-left p-3" draggable={drag}>{project.description}</p>
                                                     </a>
                                                 </div>
 
